@@ -1,0 +1,77 @@
+/* Container voor de navigatie */
+nav {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #f4f4f4;
+    border: 2px solid #999;
+    padding: 15px;
+    max-width: 300px;
+    box-shadow: 3px 3px 0px #888;
+}
+
+/* De hoofdtitel "Navigatie" stylen als hoofdmap */
+nav h2 {
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+nav h2::before {
+    content: "📁 ";
+    display: inline-block;
+}
+
+/* Reset de standaard lijststijlen */
+nav ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 0;
+    position: relative;
+}
+
+/* Maak verticale hulplijnen voor de mappen */
+nav ul::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    bottom: 15px;
+    border-left: 1px dashed #666;
+}
+
+/* Elk lijstitem (het bestand of de submap) */
+nav li {
+    position: relative;
+    margin: 5px 0;
+    padding-left: 15px;
+}
+
+/* Horizontale verbindingslijntjes naar de items */
+nav li::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    width: 10px;
+    border-top: 1px dashed #666;
+}
+
+/* Styling voor de links (bestanden) */
+nav li a {
+    text-decoration: none;
+    color: #0000ee;
+    font-size: 0.95rem;
+    display: inline-block;
+}
+
+/* Voeg een bestand-icoontje toe voor elke link */
+nav li a::before {
+    content: "📄 ";
+    display: inline-block;
+}
+
+/* Hover effect voor de retro vibe */
+nav li a:hover {
+    text-decoration: underline;
+    background-color: #ffffcc;
+    color: #ff0000;
+}
