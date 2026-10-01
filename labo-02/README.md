@@ -18,16 +18,16 @@ Vul de eerste twee kolommen in vóór je de pagina opent. Trede: herkomst, speci
 
 | vraag | mijn voorspelling (kleur) | beslissende trede | uitkomst in de browser | juist? |
 |---|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
-| 5 | | | | |
-| 6 | | | | |
-| 7 | | | | |
-| 8 | | | | |
-| 9 | | | | |
-| 10 | | | | |
+| 1 | groen | a | alle links worden groen van font kleur | juist |
+| 2 | blauw | de 2de class v2-tekst | de tekst krijgt de kleur blauw | juist |
+| 3 | rood | .opvallend | de tekst met class opvallend wordt rood | juist |
+| 4 | rood | .v4 a | enkel de tag a wordt rood | juist |
+| 5 | blauw | #v5-tekst | de tekst met de id wordt blauw | juist |
+| 6 | rood en blauw | .v6 en .v6-tekst | alles wordt rood behalve de tekst die wordt geoveride naar blauw | juist |
+| 7 | rood | .v7 | alles wordt rood dat in de class .v7 staat | |
+| 8 | blauw | style in de tag | de tekst wordt blauw want de style in de tag krijgt voorang | juist |
+| 9 | rood | h3 met important | door de important wordt het rood en vallen alle andere functies voor de kleur | juist |
+| 10 | groen | color groen | door de fout kan de rest niet worden uitgevoerd | juist |
 
 Bij welke vraag zat je fout, en wat was de reden? (Alles juist? Welke vraag duurde het langst, en waarom?)
 
