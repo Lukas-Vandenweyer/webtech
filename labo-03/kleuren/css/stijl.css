@@ -1,8 +1,78 @@
 /* stijl.css - labo 3, kleuren (reset.css is linked before this file) */
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* === tokens === */
 :root {
+    --tomaat: #FF6347;
+    --orangered: #FF4500;
+    --coral: #FF7F50;
+    --lightsalmon: #FFA07A;
+    --darkorange: #FF8C00;
 
+    --height-band: 50vh;
+    --width-band: 100%;
+
+    --title-size: 1.5rem;
+    --tekst-size: 0.8rem;
+
+    --letter-spacing-title: 0.25rem;
+
+    --font-family: Arial;
+    --color: #ffffff;
+
+    --padding-title: 0.5rem;
+
+    --default-gap: 0.75rem;
 }
 
 /* === your rules === */
+
+ul li{
+    width: var(--width-band);
+    height: var(--height-band);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2, p{
+    color: var(--color);
+}
+
+h2{
+    font-size: var(--title-size);
+    letter-spacing: var(--letter-spacing-title);
+    padding: var(--padding-title);
+}
+
+.codes{
+    font-size: var(--tekst-size);
+    display: flex;
+    flex-direction: row;
+    gap: var(--default-gap);
+}
+
+.tomato{
+    background-color: var(--tomaat);
+}
+
+.orangered{
+    background-color: var(--orangered);
+}
+
+.coral{
+    background-color: var(--coral);
+}
+
+.lightsalmon{
+    background-color: var(--lightsalmon);
+}
+
+.darkorange{
+    background-color: var(--darkorange);
+}
