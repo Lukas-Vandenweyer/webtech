@@ -34,12 +34,19 @@ Bij welke vraag zat je fout, en wat was de reden? (Alles juist? Welke vraag duur
 ## 4. De nabouw
 
 - Welke selector koos je voor de links in de navigatie, en waarom geen class?
+    main a, footer a, nav a: omdat er geen classes in de navigatie was toegevoegd in de html
 - Welke regel kostte je het meeste tijd, en wat was uiteindelijk de oorzaak?
+    nav a: omdat hier het meest ingewikkelde voor mij inzat
 
 ## 6. Je site
 
 - Welke drie waarden staan in je tokenblok, en waarom die?
+    --default-tekst: verdana;
+    --basishoogte: 16px;
+    --links-front: #ffc0cb;
+    omdat ik heb gekozen voor dit lettertype, deze basishoogte en de tekstkleur voor de links 
 - Wat verandert er in je site als je één token wijzigt?
+het lettertype of de bassishoogte van alle p tags of de tekstkleur van de links
 
 ## Thuis: R2.3 (met AI)
 
