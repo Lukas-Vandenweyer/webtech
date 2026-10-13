@@ -27,14 +27,35 @@ h1{
 
 }
 
+h2{
+    font-weight: 500;
+    padding: 1rem 1rem 1rem 0rem;
+}
+
+h3, .slogan{
+    color: var(--gedempt);
+    padding: 1rem 1rem 1rem 0rem;
+}
+
 p{
     font-family: var(--tekst);
     font-size: var(--basismaat);
     line-height: var(--regelhoogte);
+    padding: 1rem 1rem 1.5rem 0rem;
+}
+
+strong{
+    color: var(--accent);
 }
 
 .slogan{
     font-style: italic;
+    
+}
+
+.intro{
+    font-size: 1.1rem;
+    
 }
 
 nav a{
@@ -48,6 +69,16 @@ nav a{
         text-decoration: underline;
     }
 }
+
+.kaart li:nth-child(Odd){
+    background-color: var(--zebra);
+}
+
+.prijs{
+    color: var(--gedempt);
+    font-style: italic;
+}
+
 
 main a{
     color: var(--accent);
@@ -66,3 +97,24 @@ footer a{
         color: var(--accent);
     }
 }
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    padding: 0;
+    font-size: smaller;
+    color: var(--gedempt);
+}
+
+
+ol{
+    padding: 1.5rem 1.5rem 1rem 2rem;
+}
+
+
+
