@@ -1,8 +1,70 @@
-/* stijl.css - labo 4, navigatie (reset.css is linked before this file) */
+/* stijl.css - labo 4, navigatie (reset.css is linked before this file) 
+
+De ontwerper gaf je mee: balk #1f3a2e , tekst #f3efe6 , accent #e6b53c (de naam en het vlak
+achter de actieve link, met de tekst daarop in de balkkleur); Verdana; de balk heeft 1rem boven
+en onder en 2rem links en rechts; tussen de links zit 0.5rem; elke link is een klikvlak met
+0.75rem boven en onder en 1.25rem links en rechts, en ronde hoeken van 0.5rem.
+
+
+
+*/
 
 /* === tokens === */
 :root {
+    --kleur-balk:  #1f3a2e;
+    --kleur-titel: #e6b53c;
+    --tekst-kleur: #f3efe6;
+
+    --font-family: verdana;
+    --padding-top-bottom-header: 1rem;
+    --padding-left-right-header: 2rem;
+
+    --padding-top-bottom-a: 0.75rem;
+    --padding-left-right-a: 1.25rem;
+
+    --border-radius: 0.5rem;
+
+    --default-gap: 0.5rem;
+
 
 }
 
 /* === your rules === */
+
+body{
+    font-family: var(--font-family);
+}
+
+header{
+    background-color: var(--kleur-balk);
+    color: var(--kleur-titel);
+    padding: var(--padding-top-bottom-header) var(--padding-left-right-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: var(--kleur-titel);
+    font-size: 1.25rem;
+}
+
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: var(--default-gap);
+}
+
+a{
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    padding: var(--padding-top-bottom-a) var(--padding-left-right-a);
+    color: var(--tekst-kleur);
+
+}
+
+.actief{
+    background-color: var(--kleur-titel);
+    color: var(--kleur-balk);
+} 

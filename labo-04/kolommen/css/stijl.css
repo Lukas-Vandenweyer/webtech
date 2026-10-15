@@ -2,7 +2,63 @@
 
 /* === tokens === */
 :root {
+    /*Kleur*/
+    --color1-background: darkturquoise;
+    --color2-background: darkviolet;
+    --color3-background: deepskyblue;
 
+    --tekst-color: white;
+    --tekstgrootte: 4rem;
+    --font-family: arial;
+
+    --padding-top-bottom: 10vh;
+    --padding-left-right: 4vh;
+
+    --default-gap: 4vw;
 }
 
 /* === your rules === */
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: var(--default-gap);
+    font-family: var(--font-family);
+    color: var(--tekst-color);
+    font-size: var(--tekstgrootte);
+    padding: var(--padding-top-bottom) var(--padding-left-right);
+
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    height: 100vh;
+    width: auto;
+}
+
+main div:nth-child(odd){
+    flex: 1;
+
+}
+
+main div:nth-child(even){
+    flex: 2;
+}
+
+div:nth-child(1){
+    background-color: var(--color1-background);
+}
+
+div:nth-child(2){
+    background-color: var(--color2-background);
+}
+
+div:nth-child(3){
+    background-color: var(--color3-background);
+}

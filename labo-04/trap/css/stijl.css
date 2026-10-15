@@ -1,8 +1,61 @@
 /* stijl.css - labo 4, trap (reset.css is linked before this file) */
 
+/*
+De ontwerper gaf je mee: de treden zijn #1446a0 , #db3069 , #f5d547 en #ebebd3 , met een wit
+cijfer van 3rem in het midden (op de laatste, lichte trede is het cijfer #2b2b2b ); Arial; het raster
+vult het venster volledig, zonder tussenruimte.
+*/
+
 /* === tokens === */
 :root {
-
+    --kleur1: #1446a0;
+    --kleur2: #db3069;
+    --kleur3: #f5d547;
+    --kleur4: #ebebd3;
+    --tekst-kleur: #2b2b2b;
 }
 
 /* === your rules === */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 3rem;
+}
+
+.trap{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 100vh;
+    
+}
+
+.trede{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trede:nth-child(1){
+    grid-column: 1/1;
+    grid-row: 1/1;
+    background-color: var(--kleur1);
+}
+
+.trede:nth-child(2){
+    grid-column: 2/2;
+    grid-row: 2/2;
+    background-color: var(--kleur2);
+}
+
+.trede:nth-child(3){
+    grid-column: 3/3;
+    grid-row: 3/3;
+    background-color: var(--kleur3);
+}
+
+.trede:nth-child(4){
+    grid-column: 4/4;
+    grid-row: 4/4;
+    background-color: var(--kleur4);
+    color: var(--tekst-kleur);
+}

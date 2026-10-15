@@ -1,8 +1,107 @@
-/* stijl.css - labo 4, dierenasiel (reset.css is linked before this file) */
+/* stijl.css - labo 4, dierenasiel (reset.css is linked before this file) 
+
+
+De ontwerper gaf je mee: papier #f7f4ec , kaart wit, inkt #2b2b2b , gedempt #6b6b6b , balk en
+knop #1f3a2e met tekst #f3efe6 , accent #e6b53c (de naam en de actieve link); tekst in
+Verdana met regelhoogte 1.6, koppen in Georgia; de leeskolom is hoogstens 60rem breed met
+2rem padding; tussen de kaarten 1.5rem, en elke kaart heeft 1.5rem padding, ronde hoeken van
+0.5rem en een zachte schaduw (3.5); de knop heeft 0.5rem boven en onder, 1rem links en
+rechts en hoeken van 0.25rem.
+*/
 
 /* === tokens === */
 :root {
+    --papier: #f7f4ec;
+    --inkt: #2b2b2b;
+    --gedempt: #6b6b6b;
+    --balk: #1f3a2e;
+    --tekst: #f3efe6;
+    --accent: #e6b53c;
 
+
+
+
+
+    --kleur-balk:  #1f3a2e;
+    --kleur-titel: #e6b53c;
+    --tekst-kleur: #f3efe6;
+
+    --font-family: verdana;
+    --padding-top-bottom-header: 1rem;
+    --padding-left-right-header: 2rem;
+
+    --padding-top-bottom-a: 0.75rem;
+    --padding-left-right-a: 1.25rem;
+
+    --border-radius: 0.5rem;
+
+    --default-gap: 0.5rem;
 }
 
 /* === your rules === */
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color: var(--papier);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    background-color: var(--kleur-balk);
+    color: var(--kleur-titel);
+    padding: var(--padding-top-bottom-header) var(--padding-left-right-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    color: var(--kleur-titel);
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: var(--default-gap);
+}
+
+nav a{
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    padding: var(--padding-top-bottom-a) var(--padding-left-right-a);
+    color: var(--tekst-kleur);
+
+}
+
+.actief{
+    color: var(--kleur-titel);
+} 
+
+h1, h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main{
+    max-width: 60rem;
+}
+
+footer{
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--balk);
+    color: white;
+    padding: 0.5rem;
+}

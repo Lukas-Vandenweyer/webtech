@@ -1,8 +1,74 @@
 /* stijl.css - labo 4, mondriaan (reset.css is linked before this file) */
 
+/*De ontwerper gaf je mee: blauw #2554ab ; de vlakken #a090af (lila), #a16122 (bruin),
+#e7c948 (geel), #13234e (marine), #ae9310 (olijf) en #cd2424 (rood), elk met de class van
+hun kleur; het schilderij is 70vh breed en hoog en staat horizon
+*/
+
 /* === tokens === */
 :root {
-
+    --vlak1: #a090af;
+    --vlak2: #a16122;
+    --vlak3: #e7c948;
+    --vlak4: #13234e;
+    --vlak5: #ae9310;
+    --vlak6: #cd2424;
+    --background-kleur: #2554ab;
 }
 
 /* === your rules === */
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.schilderij{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: var(--background-kleur);
+    width: 70vh;
+    height: 70vh;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.lila{
+    grid-row: 1/1;
+    grid-column: 1/4;
+    background-color: var(--vlak1);
+}
+
+
+.bruin{
+    grid-row: 1/1;
+    grid-column: 4/5;
+    background-color: var(--vlak2);
+}
+
+.geel{
+    grid-row: 2/2;
+    grid-column: 1/1;
+    background-color: var(--vlak3);
+}
+
+.marine{
+    grid-row: 2/2;
+    grid-column: 4/5;
+    background-color: var(--vlak4);
+}
+
+.olijf{
+    grid-row: 3/3;
+    grid-column: 1/4;
+    background-color: var(--vlak5);
+}
+
+.rood{
+    grid-row: 3/3;
+    grid-column: 4/5;
+    background-color: var(--vlak6);
+}
